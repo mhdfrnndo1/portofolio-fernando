@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nextcloud & Collabora | Muhammad Fernando</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="meteor-canvas"></canvas>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" style="font-size:1.1rem;" href="index.html">
+          <i class="bi bi-arrow-left text-info me-2"></i> BACK TO PORTFOLIO
+      </a>
+    </div>
+  </nav>
+
+  <section class="project-hero" style="padding-top: 120px; padding-bottom: 60px;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="d-inline-block px-3 py-1 mb-4 border border-secondary rounded-pill" style="background: rgba(255,255,255,0.05);">
+            <span class="text-info small letter-spacing-1"><i class="bi bi-hdd-network"></i> COLLABORATION PLATFORM</span>
+        </div>
+        <h1 class="display-3 fw-bold mb-3">Nextcloud <span class="rgb-text">Hub</span></h1>
+        <p class="lead text-secondary mx-auto" style="max-width: 700px;">
+            Infrastruktur <em>Private Cloud Storage</em> dengan kapabilitas kolaborasi dokumen secara <em>real-time</em> via Collabora Online.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-lg-10">
+          <div class="glass-card p-2 mb-4">
+            <img src="assets/image/nextcloud.png" class="img-fluid w-100 rounded-3" alt="Nextcloud Dashboard">
+          </div>
+          <div class="glass-card p-2">
+            <img src="assets/image/nextcloud2.png" class="img-fluid w-100 rounded-3" alt="Nextcloud Editing">
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center g-5">
+        <div class="col-lg-3" data-aos="fade-right">
+          <div class="glass-card p-4 rounded-4 h-100">
+            <h5 class="fw-bold text-white mb-4 border-bottom border-secondary pb-3">Project Info</h5>
+            <div class="mb-4">
+              <small class="text-muted d-block mb-1">Role</small>
+              <span class="fw-semibold text-primary">Cloud Engineer</span>
+            </div>
+            <div class="mb-4">
+              <small class="text-muted d-block mb-1">Year</small>
+              <span class="fw-semibold text-white">2025</span>
+            </div>
+            <div class="mb-3">
+              <small class="text-muted d-block mb-2">Tech Stack</small>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-dark border border-secondary fw-normal">Nextcloud</span>
+                <span class="badge bg-dark border border-secondary fw-normal">Collabora</span>
+                <span class="badge bg-dark border border-secondary fw-normal">Docker Compose</span>
+                <span class="badge bg-dark border border-secondary fw-normal">Nginx Proxy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="glass-card p-5 rounded-4 h-100">
+            <h3 class="fw-bold mb-4 text-white">Project Overview</h3>
+            <p class="text-secondary lh-lg mb-5">
+              Di era kerja <em>remote</em>, memiliki kendali penuh atas data perusahaan adalah prioritas keamanan nomor satu. Proyek ini membebaskan perusahaan dari ketergantungan lisensi layanan <em>Public Cloud</em> pihak ketiga dengan membangun <strong>Private Data Center</strong> yang mandiri dan berdaulat penuh atas datanya (Data Sovereignty).
+            </p>
+
+            <h4 class="fw-bold mb-3 text-white"><i class="bi bi-shield-exclamation text-warning me-2"></i> The Challenge</h4>
+            <ul class="text-secondary lh-lg mb-5">
+              <li>Biaya lisensi berlangganan (SaaS) per-user yang membengkak seiring pertumbuhan karyawan.</li>
+              <li>Risiko kebocoran dokumen rahasia jika disimpan di server asing.</li>
+              <li>Kebutuhan mutlak akan fitur <em>live-editing</em> dokumen (Excel, Word) oleh banyak divisi secara bersamaan.</li>
+            </ul>
+
+            <h4 class="fw-bold mb-3 text-white"><i class="bi bi-rocket-takeoff text-success me-2"></i> Technical Execution</h4>
+            <p class="text-secondary lh-lg mb-5">
+              Arsitektur sistem dibangun di atas <strong>Docker Containers</strong> untuk isolasi servis yang ketat antara <em>Nextcloud Web App</em> dan <em>Collabora CODE Server</em>. Performa baca/tulis dokumen ditingkatkan drastis menggunakan in-memory cache <strong>Redis</strong> dan optimasi <strong>MariaDB</strong>. Trafik jaringan dilindungi <em>Reverse Proxy</em> dengan manajemen sertifikat SSL otomatis.
+            </p>
+
+            <div class="row g-4 mt-2">
+              <div class="col-md-6">
+                <div class="p-4 border border-secondary rounded-4 text-center" style="background: rgba(255,255,255,0.03);">
+                  <i class="bi bi-cloud-check display-4 text-info mb-3"></i>
+                  <h5 class="text-white mb-0">100% Data Ownership</h5>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-4 border border-secondary rounded-4 text-center" style="background: rgba(255,255,255,0.03);">
+                  <i class="bi bi-people display-4 text-info mb-3"></i>
+                  <h5 class="text-white mb-0">Zero-Latency Collab</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 mt-5 text-center">
+    <small class="text-muted">© 2026 Muhammad Fernando. Enterprise Standard Solutions.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
