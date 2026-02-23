@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typeText = document.querySelector('.type-effect');
     if (typeText && typeof Typewriter !== 'undefined') {
         new Typewriter(typeText, {
-            strings: ['Cloud Infrastructure', 'Fullstack Architecture', 'Enterprise Solutions'],
+            strings: ['Cloud Development', 'Fullstack Development', 'IT Asset Management'],
             autoStart: true, loop: true, delay: 50, deleteSpeed: 20, cursor: '|'
         });
     }
